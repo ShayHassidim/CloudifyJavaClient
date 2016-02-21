@@ -1,4 +1,5 @@
-# CloudifyJavaClient
+# Cloudify Java Client
+
 Cloudify Java Client using Cloudify Rest API using Sprint RestTemlate
 
 See the hello.Application for examples how to use Cloudify Rest API with Java application.
