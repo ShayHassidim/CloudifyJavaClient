@@ -14,13 +14,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
+	static String cloudifyManagerUrl = System.getProperty("cloudifyManagerUrl" , "http://10.8.1.145:8100");
+
 	private static final Logger log = LoggerFactory
 			.getLogger(Application.class);
 
 	public static void main(String args[]) {
 		SpringApplication.run(Application.class);
 	}
-	static String cloudifyManagerUrl = "http://10.8.1.145:8100";
 
 	public void run(String... strings) throws Exception {
 		getBlueprintsList(strings);
